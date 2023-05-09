@@ -388,11 +388,11 @@
         },
         "checkov": {
             "hashes": [
-                "sha256:1bab529798da6f52b29a78700437ae73a64c81c56facf3015a7c978b04bf7d5b",
-                "sha256:f537e56266d1f2a2f24b5f0c330d139e3af24955b32358b194f38e4771ab19ef"
+                "sha256:474ac104494cf093a842292b4e72542c30122c1ffb81f6e4518c778df29d775b",
+                "sha256:73ccd8ef331fef373795e8d81157674e286ff909c582aa348e16bc71eb3a4493"
             ],
             "index": "pypi",
-            "version": "==2.3.231"
+            "version": "==2.3.234"
         },
         "click": {
             "hashes": [
@@ -1054,7 +1054,7 @@
                 "sha256:0123cacc1627ae19ddf3c27a5de5bd67ee4586fbdd6440d9748f8abb483d3e86",
                 "sha256:961d03dc3453ebbc59dbdea9e4e11c5651520a876d0f4db161e8674aae935da9"
             ],
-            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2'",
+            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'",
             "version": "==2.8.2"
         },
         "pyyaml": {
@@ -1241,7 +1241,7 @@
                 "sha256:1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926",
                 "sha256:8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254"
             ],
-            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2'",
+            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'",
             "version": "==1.16.0"
         },
         "smmap": {
@@ -1295,7 +1295,7 @@
                 "sha256:806143ae5bfb6a3c6e736a764057db0e6a0e05e338b5630894a5f779cabb4f9b",
                 "sha256:b3bda1d108d5dd99f4a20d24d9c348e91c4db7ab1b749200bded2f839ccbe68f"
             ],
-            "markers": "python_version >= '2.6' and python_version not in '3.0, 3.1, 3.2'",
+            "markers": "python_version >= '2.6' and python_version not in '3.0, 3.1, 3.2, 3.3'",
             "version": "==0.10.2"
         },
         "tqdm": {
