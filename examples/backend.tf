@@ -1,5 +1,6 @@
 module "backendifier" {
-  source = "../"
+  source  = "gekken/backendifier/aws"
+  version = "1.1.0"
 
   # Team decided that "tf_backend" is too boring!
   bucket_name_suffix = "my-super-duper-project"

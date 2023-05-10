@@ -45,7 +45,7 @@ No providers.
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_backendifier"></a> [backendifier](#module\_backendifier) | ../ | n/a |
+| <a name="module_backendifier"></a> [backendifier](#module\_backendifier) | gekken/backendifier/aws | 1.1.0 |
 
 ## Resources
 
