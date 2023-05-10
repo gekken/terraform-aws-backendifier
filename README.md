@@ -8,6 +8,7 @@ It is slightly opinionated, but most decsions are easily supported and can obvio
 
 | Name | Version |
 |------|---------|
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >=1.4.0, <1.5.0 |
 | <a name="requirement_aws"></a> [aws](#requirement\_aws) | 4.66.1 |
 | <a name="requirement_random"></a> [random](#requirement\_random) | 3.5.1 |
 
@@ -48,7 +49,7 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_bucket_name"></a> [bucket\_name](#input\_bucket\_name) | The name of the bucket for your backend. | `string` | `"tf-backend"` | no |
+| <a name="input_bucket_name_suffix"></a> [bucket\_name\_suffix](#input\_bucket\_name\_suffix) | This module concatenates a prefix string using<br>[`random_pet`](https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/pet)<br>to help ensure [globally-unique names](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingBucket.html) | `string` | `"tf-backend"` | no |
 | <a name="input_dynamodb_billing_mode"></a> [dynamodb\_billing\_mode](#input\_dynamodb\_billing\_mode) | The billing mode for the DynamoDB locking table. For low-volume (<50 runs/day), PAY\_PER\_REQUEST is considerably<br>less exensive. Switch to PROVISIONED if you need autoscaling (niche). | `string` | `"PAY_PER_REQUEST"` | no |
 | <a name="input_dynamodb_table_name"></a> [dynamodb\_table\_name](#input\_dynamodb\_table\_name) | Name for the locking table | `string` | `"tf_state_lock"` | no |
 | <a name="input_kms_key_deletion_window"></a> [kms\_key\_deletion\_window](#input\_kms\_key\_deletion\_window) | Number of days to retain deleted KMS keys for backup purposes. | `number` | `10` | no |

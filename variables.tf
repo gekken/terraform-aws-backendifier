@@ -23,8 +23,12 @@ variable "kms_key_rotation_enabled" {
 
 # S3 Bucket Variables
 
-variable "bucket_name" {
-  description = "The name of the bucket for your backend."
+variable "bucket_name_suffix" {
+  description = <<-EOL
+    This module concatenates a prefix string using
+    [`random_pet`](https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/pet)
+    to help ensure [globally-unique names](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingBucket.html)
+  EOL
 
   type    = string
   default = "tf-backend"
