@@ -1,6 +1,6 @@
 repos:
 -   repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v2.3.0
+    rev: v4.6.0
     hooks:
     -   id: check-yaml
     -   id: end-of-file-fixer
@@ -9,10 +9,12 @@ repos:
         args:
         - --allow-missing-credentials
 - repo: https://github.com/antonbabenko/pre-commit-terraform
-  rev: v1.79.0 # Get the latest from: https://github.com/antonbabenko/pre-commit-terraform/releases
+  rev: v1.92.1 # Get the latest from: https://github.com/antonbabenko/pre-commit-terraform/releases
   hooks:
     - id: terraform_fmt
     - id: terraform_checkov
+      args:
+        - --args=--skip-path="examples/"
     - id: terraform_docs
       args:
       - --hook-config=--add-to-existing-file=true     # Boolean. true or false

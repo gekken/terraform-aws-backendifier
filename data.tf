@@ -1,3 +1,4 @@
+data "aws_caller_identity" "current" {}
 data "aws_iam_policy_document" "s3_bucket_force_ssl" {
   statement {
     sid     = "S3TFBucketOnlyAllowTLS"

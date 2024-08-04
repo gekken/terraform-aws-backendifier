@@ -16,4 +16,6 @@ resource "aws_dynamodb_table" "state_locking" {
     enabled     = true
     kms_key_arn = aws_kms_key.bucket_encryption_key.arn
   }
+
+  tags = var.tagging
 }

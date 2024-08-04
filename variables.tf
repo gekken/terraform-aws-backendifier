@@ -5,6 +5,21 @@ variable "region" {
   default = "us-west-2"
 }
 
+variable "profile" {
+  description = "The aws STS/SSO profile to use"
+
+  type    = string
+  default = "default"
+}
+
+variable "tagging" {
+  description = "an optional map to hold tags see README.md > Tag Example"
+
+  type     = map(string)
+  default  = {}
+  nullable = true
+}
+
 #KMS Variables
 
 variable "kms_key_deletion_window" {
@@ -22,6 +37,12 @@ variable "kms_key_rotation_enabled" {
 }
 
 # S3 Bucket Variables
+
+variable "custom_bucket_name" {
+  description = "This is if you want to create a completely custom name. Remember, S3 bucket names _must_ be globally unique. Good luck!"
+  type        = string
+  default     = null
+}
 
 variable "bucket_name_suffix" {
   description = <<-EOL

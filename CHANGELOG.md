@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 none
+##[v1.2.0]
+### Added
+* Ability to use custom names
+* AWS profile as a variable
+* Data caller ID
+* KMS Key policy to shut Checkov up
+* optional tagging to all taggable resources
+
+## Changed
+* Updated all dependencies
+
 
 ##[v1.1.0]
 
